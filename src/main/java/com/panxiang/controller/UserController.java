@@ -18,7 +18,7 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping("/getUser")
-    public User getUser(@RequestParam("name") String name){
+    public User getUser(@RequestParam("name") String name) {
         return userService.getUserByName(name);
     }
 }
